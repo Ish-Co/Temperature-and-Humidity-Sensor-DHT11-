@@ -11,12 +11,12 @@ int heatSetTo = 72;             //Temperature set to 72 F
 ```
 5. Compile and upload your code again. 
 Your output might look like this,
->>>Current humidity = 44%
->>>temperature = 71 F
->>>Heater Status = ON
->>>...
->>>Current humidity = 44%
->>>temperature = 72 F
+>>Current humidity = 44%
+>>temperature = 71 F
+>>Heater Status = ON
+>>...
+>>Current humidity = 44%
+>>temperature = 72 F
 >>>Heater Status = OFF
 >>>...
 >>>Current humidity = 44%
