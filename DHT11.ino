@@ -1,3 +1,8 @@
+//----------------------------
+//Author      : Ismail Sghir
+//Last updated: 12/30/2020
+//----------------------------
+
 #include <dht.h>
 #define dht_apin A0
 
