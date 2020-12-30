@@ -36,10 +36,8 @@ void loop()
     
     if (counter <= 0)                                   //checks if the counter is 0 or less
     {
-      //120 * 5s = 600s = 10 min 
-      //this will keep the heat status stable for 10 minutes
-        counter = 24;                                   //Reset the counter to 24 
-        if (temp > heatSetTo)                           //If temperature is 
+        counter = 120;                                  //Reset the counter to 120 
+        if (temp > heatSetTo)                           //If min temperature has been reached
         {
             digitalWrite(ledPin, LOW);                  //Turn OFF the indicator led       
             digitalWrite(trigPin, LOW);                 //Turn OFF the heater
@@ -50,7 +48,7 @@ void loop()
             digitalWrite(trigPin, HIGH);                //Turn ON the heater
         }
     }
-    Serial.print("Heat Status = ");                     //Print the heat status 
+    Serial.print("Heater Status = ");                   //Print the heater status 
     if(trigPin) 
         Serial.println("ON");
     else
